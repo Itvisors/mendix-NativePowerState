@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<widget id="aiden.nativepowerstate.NativePowerState" pluginWidget="true" needsEntityContext="true" offlineCapable="true"
+        supportedPlatform="Native"
+        xmlns="http://www.mendix.com/widget/1.0/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:schemaLocation="http://www.mendix.com/widget/1.0/ ../node_modules/mendix/custom_widget.xsd">
+    <name>Native Power State</name>
+    <description>Native Power State widget</description>
+    <properties>
+        <propertyGroup caption="General">
+            <property key="powerStateAttr" type="attribute">
+                <caption>Powerstate</caption>
+                <description>The attribute that receives the power state</description>
+                <attributeTypes>
+                    <attributeType name="String"/>
+                </attributeTypes>
+            </property>
+            <property key="onPowerStateChanged" type="action" required="false">
+                <caption>On power state changed</caption>
+                <description>Action to trigger after the power state changed</description>
+            </property>
+        </propertyGroup>
+    </properties>
+</widget>
