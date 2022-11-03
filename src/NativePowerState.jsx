@@ -6,7 +6,15 @@ export function NativePowerState({ powerStateAttr, onPowerStateChanged }) {
     const powerState = usePowerState();
     const [currentBatteryState, setCurrentBatteryState] = useState(undefined);
     useEffect(() => {
-        const newBatteryState = powerState?.batteryState ? "" + powerState.batteryState : undefined;
+        // console.info("power state: " + JSON.stringify(powerState));
+        // On Android the power state is an object or just a plain string.
+        // The first time, an object is returned but after that a plain string!
+        let newBatteryState;
+        if ("string" === typeof powerState) {
+            newBatteryState = powerState;
+        } else {
+            newBatteryState = powerState?.batteryState ? "" + powerState.batteryState : undefined;
+        }
         if (newBatteryState !== currentBatteryState) {
             // console.info("Power state change, old: " + currentBatteryState + ", new: " + newBatteryState);
 
