@@ -12,6 +12,7 @@
                 <description>The attribute that receives the power state</description>
                 <attributeTypes>
                     <attributeType name="String"/>
+                    <attributeType name="Enum"/>
                 </attributeTypes>
             </property>
             <property key="onPowerStateChanged" type="action" required="false">
