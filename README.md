@@ -1,24 +1,13 @@
 ## NativePowerState
-[Native Power State widget]
+Access the power state of the device and get notified of changes.
 
 ## Features
-[feature highlights]
+Access the power state of the device and receive notification when the device gets plugged in or unplugged from a charger. On iOS, you can also tell whether the device is fully charged.
 
 ## Usage
-[step by step instructions]
+- Add a string or enum attribute to your context entity to receive the power state
+- Put the widget on your page
+- Configure the attribute
+- If desired, configure an action to perform when the power state changes
 
-## Demo project
-[link to sandbox]
-
-## Issues, suggestions and feature requests
-[link to GitHub issues]
-
-## Development and contribution
-
-1. Install NPM package dependencies by using: `npm install`. If you use NPM v7.x.x, which can be checked by executing `npm -v`, execute: `npm install --legacy-peer-deps`.
-1. Run `npm start` to watch for code changes. On every change:
-    - the widget will be bundled;
-    - the bundle will be included in a `dist` folder in the root directory of the project;
-    - the bundle will be included in the `deployment` and `widgets` folder of the Mendix test project.
-
-[specify contribution]
+Useful to perform actions only when you know the device is charging. Like a barcode scanner that is put on its charger for the night. Keep the app running and synchronize data when the device is not in use.
