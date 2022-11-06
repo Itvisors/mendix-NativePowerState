@@ -11,3 +11,11 @@ Access the power state of the device and receive notification when the device ge
 - If desired, configure an action to perform when the power state changes
 
 Useful to perform actions only when you know the device is charging. Like a barcode scanner that is put on its charger for the night. Keep the app running and synchronize data when the device is not in use.
+
+### Enum values:
+- unknown
+- unplugged
+- charging
+- full
+
+Create an enumeration with these values as the name, caption can be anything, for example a translation in the project language.
