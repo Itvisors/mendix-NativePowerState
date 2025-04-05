@@ -20,8 +20,7 @@ public class NativeAppContext implements com.mendix.systemwideinterfaces.core.IE
 	 */
 	public enum MemberNames
 	{
-		PowerStateString("PowerStateString"),
-		PowerStateEnum("PowerStateEnum");
+		PowerStateLog("PowerStateLog");
 
 		private final java.lang.String metaName;
 
@@ -74,84 +73,39 @@ public class NativeAppContext implements com.mendix.systemwideinterfaces.core.IE
 	}
 
 	/**
-	 * @return value of PowerStateString
+	 * @return value of PowerStateLog
 	 */
-	public final java.lang.String getPowerStateString()
+	public final java.lang.String getPowerStateLog()
 	{
-		return getPowerStateString(getContext());
+		return getPowerStateLog(getContext());
 	}
 
 	/**
 	 * @param context
-	 * @return value of PowerStateString
+	 * @return value of PowerStateLog
 	 */
-	public final java.lang.String getPowerStateString(com.mendix.systemwideinterfaces.core.IContext context)
+	public final java.lang.String getPowerStateLog(com.mendix.systemwideinterfaces.core.IContext context)
 	{
-		return (java.lang.String) getMendixObject().getValue(context, MemberNames.PowerStateString.toString());
+		return (java.lang.String) getMendixObject().getValue(context, MemberNames.PowerStateLog.toString());
 	}
 
 	/**
-	 * Set value of PowerStateString
-	 * @param powerstatestring
+	 * Set value of PowerStateLog
+	 * @param powerstatelog
 	 */
-	public final void setPowerStateString(java.lang.String powerstatestring)
+	public final void setPowerStateLog(java.lang.String powerstatelog)
 	{
-		setPowerStateString(getContext(), powerstatestring);
+		setPowerStateLog(getContext(), powerstatelog);
 	}
 
 	/**
-	 * Set value of PowerStateString
+	 * Set value of PowerStateLog
 	 * @param context
-	 * @param powerstatestring
+	 * @param powerstatelog
 	 */
-	public final void setPowerStateString(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String powerstatestring)
+	public final void setPowerStateLog(com.mendix.systemwideinterfaces.core.IContext context, java.lang.String powerstatelog)
 	{
-		getMendixObject().setValue(context, MemberNames.PowerStateString.toString(), powerstatestring);
-	}
-
-	/**
-	 * Get value of PowerStateEnum
-	 * @param powerstateenum
-	 */
-	public final testpowerstate.proxies.PowerState getPowerStateEnum()
-	{
-		return getPowerStateEnum(getContext());
-	}
-
-	/**
-	 * @param context
-	 * @return value of PowerStateEnum
-	 */
-	public final testpowerstate.proxies.PowerState getPowerStateEnum(com.mendix.systemwideinterfaces.core.IContext context)
-	{
-		Object obj = getMendixObject().getValue(context, MemberNames.PowerStateEnum.toString());
-		if (obj == null) {
-			return null;
-		}
-		return testpowerstate.proxies.PowerState.valueOf((java.lang.String) obj);
-	}
-
-	/**
-	 * Set value of PowerStateEnum
-	 * @param powerstateenum
-	 */
-	public final void setPowerStateEnum(testpowerstate.proxies.PowerState powerstateenum)
-	{
-		setPowerStateEnum(getContext(), powerstateenum);
-	}
-
-	/**
-	 * Set value of PowerStateEnum
-	 * @param context
-	 * @param powerstateenum
-	 */
-	public final void setPowerStateEnum(com.mendix.systemwideinterfaces.core.IContext context, testpowerstate.proxies.PowerState powerstateenum)
-	{
-		if (powerstateenum != null) {
-			getMendixObject().setValue(context, MemberNames.PowerStateEnum.toString(), powerstateenum.toString());
-		} else {
-			getMendixObject().setValue(context, MemberNames.PowerStateEnum.toString(), null);
-		}
+		getMendixObject().setValue(context, MemberNames.PowerStateLog.toString(), powerstatelog);
 	}
 
 	@java.lang.Override

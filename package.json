@@ -1,7 +1,7 @@
 {
   "name": "nativepowerstate",
   "widgetName": "NativePowerState",
-  "version": "4.0.0",
+  "version": "5.0.0",
   "description": "Native Power State widget",
   "copyright": "Aiden 2022",
   "author": "Marcel Groeneweg",
@@ -22,7 +22,7 @@
     "release": "pluggable-widgets-tools release:native"
   },
   "devDependencies": {
-    "@mendix/pluggable-widgets-tools": "^10.12.1"
+    "@mendix/pluggable-widgets-tools": "10.21.0"
   },
   "dependencies": {
     "react-native-device-info": "13.0.0"

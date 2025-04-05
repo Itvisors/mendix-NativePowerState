@@ -8,17 +8,12 @@
     <studioProCategory>Device features</studioProCategory>
     <properties>
         <propertyGroup caption="General">
-            <property key="powerStateAttr" type="attribute">
-                <caption>Powerstate</caption>
-                <description>The attribute that receives the power state</description>
-                <attributeTypes>
-                    <attributeType name="String"/>
-                    <attributeType name="Enum"/>
-                </attributeTypes>
-            </property>
             <property key="onPowerStateChanged" type="action" required="false">
                 <caption>On power state changed</caption>
                 <description>Action to trigger after the power state changed</description>
+                <actionVariables>
+                    <actionVariable key="powerState" type="String" caption="Power state" />
+                </actionVariables>
             </property>
         </propertyGroup>
     </properties>
